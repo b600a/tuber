@@ -1,4 +1,4 @@
-# `tuber`
+# `FastaNGS`
 A nexflow pipeline for short variant calling from NGS data
 ## Description
 Whole genome sequencing data are used for various purposes including molecular typing, classification and phylogenetic analysis. The `tuber` pipeline processes NGS data to obtain short variants (SNVs and INDELs). This pipeline implements tools for raw data quality control and pre-processing, read mapping, variant calling and filtering to produce a ready to use vcf and multiple sequence alignment files. The tuber pipeline includes workflow of GATK Best Practices for germline short variant discovery, [link](https://gatk.broadinstitute.org/hc/en-us/articles/360035535932-Germline-short-variant-discovery-SNPs-Indels-), which allows users to work on large datasets. In addition to the GATK Best Practices, tuber includes a step to parse the SNV table into a multiple sequence alignment in fasta format. (`tuber` runs well under Linux OS and MacOSX; for Windows users `tuber` also runs well under linux in a virtual machine or Windows subsystem for linux)
@@ -225,8 +225,7 @@ Paths/Paramter | Paramter name | Default
      > trimmomatic \
      > samtools
      
-
-     2.1 Launch `nexflow` to install its dependencies by running `$ nextflow`
+<br> 2.1 Launch `nexflow` to install its dependencies by running `$ nextflow`
      
 #### 3. Install another dependency for `tuber` using `pip`:
         
